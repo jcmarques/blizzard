@@ -64,6 +64,7 @@ p {
     color: white;
     margin: 0%;
     padding: 0%;
+
 	}
 
 
@@ -77,16 +78,37 @@ p {
 	}
 
 
+#intro-presents{
+	background:url(../images/presents.jpg);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-position: 50% 50%;
+	}
+
+
+#intro-report{
+	background:url(../images/annual-report.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-position: 50% 50%;
+
+	}
+
+
 #presents{
 	font-family: 'blizzard', 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
     position: absolute;
     left: 0px;
     width: 100vw;
     letter-spacing: 1px
 	}
 
-
+/*
 #annual-report{
 	font-family: 'blizzard-bold', 'Roboto', sans-serif;
     font-size: 3em;
@@ -112,7 +134,7 @@ p {
     white-space: nowrap;
   	overflow-x: auto;
 }
-
+*/
 
 /* REPORT STARTS */
 
@@ -162,16 +184,16 @@ p {
 
 
 #sky_2nd{
-	background: url(../images/dirty.png);
+	background: url(../images/sky_2nd.png);
 	width: 60000px;
-	background-repeat: repeat;
+	background-repeat: repeat-x;
 
 	}
 
 #floor_2nd{
 	background: url(../images/floor_2nd.png) left bottom;
 	width: 60000px;
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	position: absolute;
 	}
 
@@ -225,9 +247,20 @@ p {
 	text-align: center;
 	justify-content: center;
 	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	}
+
+.svg-drawing_north-america{ 
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	}
+
 
 /*  ==== COUNTER ==== */
 
