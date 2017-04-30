@@ -10,6 +10,41 @@ body{
     src: url(../fonts/blizzard-bold.ttf) format('truetype');
 }
 
+p {
+	color: white;
+    font-family: 'blizzard', 'Roboto', sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+    padding: 20px;
+}
+
+.fa{
+	color: #00d6df;
+	padding: 15px;
+	display: block;
+}
+
+.box{
+	width: 150px;
+	display: grid;
+	height: 5px;
+}
+
+
+.description{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100vw;
+	bottom: 25%;
+}
+
+
+/* INTRO */
+
 #summary {
     position: fixed;
     top: 0%;
@@ -23,6 +58,7 @@ body{
     margin: 0%;
     padding: 0%;
 	}
+
 
 #logo{
 	background: url(../images/logo.jpg);
@@ -46,7 +82,7 @@ body{
 
 #annual-report{
 	font-family: 'blizzard-bold', 'Roboto', sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
     position: absolute;
     left: 0px;
     width: 100%;
@@ -71,24 +107,28 @@ body{
 }
 
 
-
-
-
-
-
-
-#Scene_cover{
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	}
-
+/* REPORT STARTS */
 
 #Scene_1st{
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
 	}
+
+#sky_1st{
+	background: url(../images/sky.png);
+	background-repeat: repeat-x;
+	
+	}
+
+#floor_1st{
+	background: url(../images/floor.png) left bottom;
+	background-repeat: repeat-x;
+	}
+
+
+
+
 
 #Scene_2nd{
 	position: fixed;
@@ -109,14 +149,14 @@ body{
 
 #sky_1st{
 	background: url(../images/sky.png);
-	background-repeat: repeat;
+	background-repeat: repeat-x;
 	width: 60000px;
 	}
 
 #floor_1st{
 	background: url(../images/floor.png) left bottom;
 	width: 60000px;
-	background-repeat: repeat;
+	background-repeat: repeat-x;
 	}
 
 
@@ -143,7 +183,6 @@ body{
 
 
 
-
 #call-of-duty{
 	background:url(../images/cod-logo.png);	
 	background-repeat: no-repeat; 
@@ -163,27 +202,10 @@ body{
 	}
 
 
-.description{
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	position: absolute;
-	height: 100%;
-	width: 100vw;
-	bottom: 25%;
-}
 
 
 
 
-p {
-	color: #fbf8cf;
-    font-family: 'blizzard', 'Roboto', sans-serif;
-    font-size: 1.3em;
-    list-style: none;
-    padding: 20px;
-}
 
 .dark-yellow{
 	color: #d6bb7c;
