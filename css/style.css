@@ -163,6 +163,7 @@ p {
 	background: url(../images/sky.png);
 	background-repeat: repeat-x;
 	width: 60000px;
+	background-position: 50% 0%;
 	}
 
 #floor_1st{
@@ -252,6 +253,16 @@ p {
 	}
 
 .svg-drawing_north-america{ 
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	}
+
+.svg-drawing_europe{ 
 	display: flex;
 	align-items: center;
 	text-align: center;
