@@ -42,6 +42,7 @@ p {
 	bottom: 25%;
 }
 
+
 .highlight{
 	font-family: 'blizzard-bold', 'Roboto', sans-serif;
 	font-size: 2em;
@@ -108,16 +109,6 @@ p {
     letter-spacing: 1px
 	}
 
-/*
-#annual-report{
-	font-family: 'blizzard-bold', 'Roboto', sans-serif;
-    font-size: 3em;
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    letter-spacing: 1px
-	}
-
 
 .fixed-nav-container {
     position:fixed;
@@ -134,7 +125,7 @@ p {
     white-space: nowrap;
   	overflow-x: auto;
 }
-*/
+
 
 /* REPORT STARTS */
 
@@ -272,6 +263,30 @@ p {
 	width: 100%;
 	}
 
+.svg-drawing_asia{ 
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	}
+
+
+
+  .st6 {
+  	fill: none;
+    animation-duration: 200s;
+    /*animation-fill-mode: forwards; // Stay on the last frame*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    fill:none;
+    stroke:#b3cb35;
+    stroke-width:1.8;
+    stroke-dasharray: 4682px;
+    stroke-dashoffset: 0px;
+  }
 
 
 
