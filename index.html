@@ -26,7 +26,7 @@
 		<!-- Container for the entire site -->
 		<div id="skrollr-body">
 
-
+<!--
 		<div class="fixed-nav-container dotstyle dotstyle-tooltip" data-0="left: 0px; top: 96%;"> 
 
 		    <ul class="nav-menu parallax-layer">
@@ -41,7 +41,7 @@
 		        <li><a href="#forums">Forums</a></li>
 
 		    </ul>
-      </div>	
+      </div>	-->
 
 <!--	<div class="fixed-nav-container" data-0="left: 0px;">
 
@@ -1506,7 +1506,7 @@
 
 
 			<div id="floor_2nd" class="parallax-layer"></div>
-
+		</div>
 
 <!-- =====  3rd Scene ===== --> 
 
@@ -1516,34 +1516,100 @@
 		<div id="Scene_3rd"  
 				data-79000="top: 100%;"
 				data-81000="top: 0%; left: 0%;"
-				data-88000="">
+				data-84000=""
+				data-101000="left: -800px;">
 
 			<div id="sky_3rd" class="parallax-layer"></div>
 									 							
-			<div id="sky_3rd-2" class="parallax-layer"></div>
+			<div id="sky_asymmetrical" class="parallax-layer"
+				data-0="left:0;opacity: 1;"
+				data-84000="opacity: 1;"
+				data-87000="opacity: 0;"
 				
+				data-90000=""></div>
+			
+	<!--		<div id="sky_asymmetrical_2" class="parallax-layer"
+				data-0="left:300vw;opacity:0;"
+				data-83000="opacity:1;"
+				data-91000="opacity: 1;">
+				</div>
+	-->
 
 
 
-			<!--<div class="description"
-					data-0="bottom: 20%;
+			<div class="description"
+					data-79000="left:-30%;
+							bottom: 10%;
 							opacity: 0;"
-
 					data-81000="opacity: 0;"
-					data-83000="opacity: 1;">
+					data-84000="opacity: 1;"
+					data-87000="opacity: 0;"
+					>
 
- 					<p class="box" style="width: 300px;"> 
- 					Net Revenue by<span class="highlight"><span class="highlight"></span>Platform</span></p>			
-			</div>-->
+ 					<p class="box" style="width: 300px; font-size: 1.3em;"> 
+ 					Net Revenue by<span class="highlight" style="letter-spacing: 1px; color:rgb(243, 100, 143);">Platform</span></p>			
+			</div>
 
 
-			<div id="controller_b" class="mask"
+
+			<div id="controller_p" class="parallax-layer" 
+					data-79000=" left: -20%; opacity: 0;"
+					data-84000=""
+					data-88000="top: 0px; opacity: 0;"
+					data-90000="top: -10%;transition: 0.25s; opacity: 1;"				
+					>
+
+			</div>
+
+
+
+			<div id="controller_p" class="parallax-layer" 
+					data-79000=" left: -20%; opacity: 0;"
+					data-81000="opacity: 0;"
+					data-81500="opacity: 1;"
+					data-84000=""
+					data-88000="top: 0px; opacity: 1;"
+					data-90000="top: 10%; transition: 0.25s; opacity: 1;"				
+					>
+
+						<div class="description" style="bottom: 20%;"
+						data-85500="opacity: 0;"
+						data-86000="opacity: 1;"
+						data-88000="opacity: 1;"
+						data-89000="opacity: 0;"
+						data-90000="oppacity: 0;">
+	 					<p class="box" style="width: 300px; font-size: 1.3em;""> 
+	 					<span class="highlight" style="letter-spacing: 1px; color:rgb(243, 100, 143);">Console</span></p>			
+				
+				</div> 
+
+			</div>
+
+	<!--		<div id="controller_w"
 					data-81000="opacity: 1;"
-					data-83000="opacity: 1;"></div>
+					data-86000="opacity: 1;">
+-->
 
-			<div id="controller_w"
-					data-81000="opacity: 0;"
-					data-83000="opacity: 1;"></div>
+<!-- WORKING -->
+	<!--		<div id="controller_p" class="parallax-layer" 
+					data-81000=" left: -20%; opacity: 1;"
+					data-86000="transform:rotateZ(0deg); top: 0px;"
+					data-88000="transform:rotateZ(20deg); transform-origin: middle; top: 100px;"				
+					data-90000="">
+
+
+				<div class="description" style="bottom: 20%;"
+						data-84500="opacity: 0;"
+						data-85500="opacity: 1;">
+	 					<p class="box" style="width: 300px; font-size: 1.3em;""> 
+	 					<span class="highlight" style="letter-spacing: 1px; color:rgb(243, 100, 143);">Console</span></p>			
+				</div>
+						
+			</div>
+
+
+
+			</div> -->
 
 
 
@@ -1566,7 +1632,8 @@
 
 
 		<script>
-				var s = skrollr.init();
+				var s = skrollr.init({
+					smoothscrolling=true;});
 				skrollr.menu.init(s);
 
 				var len = $(".st10").get(0).getTotalLength();
