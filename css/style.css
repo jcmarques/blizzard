@@ -238,6 +238,17 @@ p {
 	background-position: 50% 0%;
 	}
 
+#mountain{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100vw;
+	background-size: repeat-x;
+}
+
 #floor_1st{
 	background: url(../images/floor.png) left bottom;
 	width: 60000px;
