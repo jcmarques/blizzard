@@ -486,6 +486,35 @@ p {
 	}
 
 
+
+
+/*-- Internet --*/
+
+#internet_w{
+	background:url(../images/internet_w.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -3;
+
+	}
+
+#internet_p{
+	background:url(../images/internet_p.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -8;
+
+	}
+
+
+
+
 /*  ==== COUNTER ==== */
 
 #scrollCount  {
