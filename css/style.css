@@ -415,13 +415,22 @@ p {
 	}
 
 
+#sky_asymmetrical_1{
+	background: url(../images/sky_asymmetrical.png);
+	width: 120vw;
+	background-repeat: repeat;
+	transform-origin: right top left;
+		transform: skewY(60deg);
+	z-index: -1;
+
+	}
 
 #sky_asymmetrical_2{
 	background: url(../images/sky_asymmetrical.png);
-	width: 150vw;
+	width: 120vw;
 	background-repeat: repeat;
-	transform-origin: bottom right top left;
-	transform: skewY(40deg);
+	transform-origin: top right bottom;
+	transform: skewY(300deg);
 	z-index: -1;
 	}
 
