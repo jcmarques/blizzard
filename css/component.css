@@ -3,7 +3,7 @@
 .dotstyle ul {
 	position: relative;
 	display: inline-block;
-	margin: 0;
+/*	margin: 0;*/
 	padding: 0;
 	list-style: none;
 	cursor: default;
@@ -368,10 +368,9 @@
 	width: auto;
 	height: auto;
 	border-radius: 0;
-	background-color: #c44d48;
-	color: #fff;
+	color: #c44d48;
 	text-indent: 0;
-	line-height: 2;
+	line-height: 1.5;
 	opacity: 0;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
@@ -388,7 +387,7 @@
 	border: solid transparent;
 	border-width: 10px;
 	border-color: transparent;
-	border-top-color: #c44d48;
+	border-top-color: #b3c52b;
 	content: '';
 	pointer-events: none;
 	top: 99%;

@@ -12,13 +12,14 @@
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body {
+/*body {
 	background: #fff;
 	color: #777;
-	font-weight: 400;
-	font-size: 1em;
-	font-family: 'Lato', Arial, sans-serif;
-}
+	font-weight: 100;
+	font-size: 0.7em;
+	letter-spacing: 1.5px;
+	font-family: 'blizzard', 'Roboto', sans-serif;
+}*/
 
 .clearfix:before,
 .clearfix:after {
@@ -165,7 +166,7 @@ a:hover, a:focus {
 
 .dotstyle:nth-child(4n),
 .dotstyle:nth-child(4n-3) {
-	background-color: rgba(0, 0, 0, 0.05);
+
 }
 
 @media screen and (max-width: 42em) {

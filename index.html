@@ -10,12 +10,77 @@
 		<link href="css/animate.css" rel="stylesheet" type="text/css" />
 		<link href="css/demo.css" rel="stylesheet" type="text/css" />
 		<link href="css/component.css" rel="stylesheet" type="text/css" />
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	    <script type="text/javascript" src="js/dots.js"></script>
 	    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
 	    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	    <script type="text/javascript" src="js/modernizr.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<script>
+
+/***********************************************
+* jQuery Page Scroll Progress Bar v1.0 By Dynamic Drive
+* Project Page: http://www.dynamicdrive.com/dynamicindex3/pagescrollprogressbar.htm
+***********************************************/
+
+jQuery(function($){
+	var growmouseover = [true, '25px'] // magnify progress bar onmouseover? [Boolean, newheight]
+
+///////// No need to edit beyond here /////////
+
+	var $indicatorparts = $(document.body).append('<div class="scrollindicator"><div class="scrollprogress"></div></div>')
+	var $indicatorMain = $indicatorparts.find('div.scrollindicator')
+	var $scrollProgress = $indicatorparts.find('div.scrollprogress')
+	var indicatorHeight = $indicatorMain.outerHeight()
+	var transformsupport = $scrollProgress.css('transform')
+	transformsupport = (transformsupport == "none" || transformsupport =="")? false: true
+
+	function syncscrollprogress(){
+	    var winheight = $(window).height()
+	    var docheight = $(document).height()
+	    var scrollTop = $(window).scrollTop()
+	    var trackLength = docheight - winheight
+	    var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 NaN if tracklength == 0)
+			$scrollProgress.css('transform', 'translate3d(' + (-100 + pctScrolled) + '%,0,0)')
+	}
 	
+	if (transformsupport){
+		$indicatorMain.css('visibility', 'visible')
+	
+		$indicatorMain.on('click', function(e){
+			var trackLength = $(document).height() - $(window).height()
+			var scrollamt = e.clientX/($(window).width()-32) * trackLength
+			$('html,body').animate({scrollTop: scrollamt}, 'slow')
+		})
+	
+		/*if (growmouseover[0]){
+			$indicatorMain.on('mouseenter touchstart', function(e){
+				$(this).css('height', growmouseover[1])
+				e.stopPropagation()
+			})
+		
+			$indicatorMain.on('mouseleave', function(e){
+				$(this).css('height', indicatorHeight)
+			})
+			
+			$(document).on('touchstart', function(e){
+				$indicatorMain.css('height', indicatorHeight)
+			})
+		}*/
+		
+		$(window).on("scroll load", function(){
+			requestAnimationFrame(syncscrollprogress)
+		})
+	}
+})
+		
+</script>
+
+
 	</head>
 
 	<body>	
@@ -26,46 +91,19 @@
 		<!-- Container for the entire site -->
 		<div id="skrollr-body">
 
-<!--
-		<div class="fixed-nav-container dotstyle dotstyle-tooltip" data-0="left: 0px; top: 96%;"> 
+	<!--<div class="fixed-nav-container dotstyle dotstyle-tooltip" data-0="top: 93%;"> 
 
 		    <ul class="nav-menu parallax-layer">
-
-		        <li><a href="#home">Home</a></li>          
-		        <li><a href="#Scene_2nd" data-menu-top="56000">Net Revenue</a></li>         
-		        <li><a href="#curriculum">Games</a></li>
-          		<li><a href="#gallery">Revenue by Console</a></li>
-		        <li><a href="#accommodation">Accommodation</a></li>
-		        <li><a href="#testimonials">Testimonials</a></li>
-		        <li><a href="#contact-us">Contact Us</a></li>
-		        <li><a href="#forums">Forums</a></li>
-
+ 
+		        <li><a href="#Scene_1st" data-menu-top="9000" >GAMES</a></li>       
+		        <li><a href="#Scene_2nd" data-menu-top="50000">NET REVENUE</a></li>       
+            	<li><a href="#Scene_3rd" data-menu-top="84000">NET REVENUE BY CONSOLE</a></li>
+		        <li><a href="#Scene_4th" data-menu-top="">FRANCHISE GROWTH</a></li>
+		    
 		    </ul>
-      </div>	-->
-
-<!--	<div class="fixed-nav-container" data-0="left: 0px;">
-
-		    <ul class="nav-menu">
-		        <li><a href="#home">Home</a>
-		        </li>
-		        <li><a href="#Scene_2nd" data-menu-top="47000">Scene 2</a>
-		        </li>
-		        <li><a href="#curriculum">Curriculum</a>
-		        </li>
-		        <li><a href="#gallery">Gallery</a>
-		        </li>
-		        <li><a href="#accommodation">Accommodation</a>
-		        </li>
-		        <li><a href="#testimonials">Testimonials</a>
-		        </li>
-		        <li><a href="#contact-us">Contact Us</a>
-		        </li>
-		        <li><a href="#forums">Forums</a>
-		        </li>
-		    </ul>
-    	</div>	
-
--->
+      </div>	
+      -->
+      
 
 		<!-- ===================== -->
 		<!-- Summary starts here -->
@@ -473,10 +511,9 @@
 					data-33000="opacity: 1;"
 					data-35000="opacity: 1;">
 
-						<p class="box" style="color:#f3f9fd;width: 200px;"">
+						<p class="box" style="color:#f3f9fd;width: 200px;">
 						 	<i class="fa fa-child fa-3x"  style="color: rgb(117, 188, 232);"></i>
-							Largest<br/> kid console franchise since its release 
-						</p>	
+							Largest<br/> kid console franchise since its release </p>	
 
 			
 				</div>
@@ -611,7 +648,7 @@
 					</style>
 					<g id="Layer_2"></g>
 
-					<g id="Layer_1" >
+					<g id="Layer_1">
 						<g id="_x39_bddZC.tif_1_">
 							<g>
 								<path class="st5" data-47000="stroke-dashoffset: 2812;" 
@@ -1113,7 +1150,7 @@
 			<div class="svg-drawing_europe" 
 				data-0="bottom: 16.5%;
 						opacity: 0;
-						left: 1610px;"
+						left: 1620px;"
 
 						data-61000="opacity: 0;"
 						data-65000="opacity: 1;"
@@ -1361,7 +1398,7 @@
 
 
 			<div class="svg-drawing_asia" 
-				data-0="bottom: 1%; 
+				data-0="bottom: 3%; 
 						opacity: 0;
 						left: 2400px;"
 
