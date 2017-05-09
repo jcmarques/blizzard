@@ -361,6 +361,15 @@ p {
 	background-position: 50% 50%;
 	}
 
+#world-of-warcraft_test{
+	background:url();	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-position: 50% 50%;
+	}
+
 
 #skylanders{
 	background:url(../images/skylanders-logo.png);	
@@ -667,6 +676,81 @@ video {
 	}
 
 
+/* -- PC --*/
+
+#consolidated_w{
+	background:url(../images/consolidated_w.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -8;
+
+	}
+
+#consolidated_p{
+	background:url(../images/consolidated_p.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -8;
+
+	}
+
+
+
+
+/*-- Internet --*/
+
+#earning_w{
+	background:url(../images/earning_share_w.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -3;
+
+	}
+
+#earning_p{
+	background:url(../images/earning_share_p.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -8;
+
+	}
+
+#operating_w{
+	background:url(../images/operating_income_w.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -3;
+
+	}
+
+#operating_p{
+	background:url(../images/operating_income_p.png);	
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background-position: 50% 50%;
+	z-index: -8;
+
+	}
+
+
+
 
 /* === 5th Scene === */
 
@@ -722,89 +806,46 @@ video {
 	z-index: 0;
 	}
 
-
-
-
-
-/* -- CONTROLLER --*/
-
-#operating_w{
-	background:url(../images/operating_income_w.png);	
+#franchise{
+	background:url(../images/franchise.png);	
 	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100%;
-	position:fixed;
+	width: 1504px;
+	height: 80vh;
+	position:absolute;
 	background-position: 50% 50%;
-	z-index: -3;
-
-	}
-
-#operating_p{
-	background:url(../images/operating_income_p.png);	
-	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100%;
-	position:fixed;
-	background-position: 50% 50%;
-	z-index: -8;
-
-	}
-
-
-/* -- PC --*/
-
-#consolidated_w{
-	background:url(../images/consolidated_w.png);	
-	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100%;
-	position:fixed;
-	background-position: 50% 50%;
-	z-index: -8;
-
-	}
-
-#consolidated_p{
-	background:url(../images/consolidated_p.png);	
-	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100%;
-	position:fixed;
-	background-position: 50% 50%;
-	z-index: -8;
-
 	}
 
 
 
 
-/*-- Internet --*/
+/* -- Zooooombie --*/
 
-#earning_w{
-	background:url(../images/earning_share_w.png);	
-	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100%;
-	position:fixed;
-	background-position: 50% 50%;
-	z-index: -3;
 
+
+
+#zombie{
+	position:absolute;
+	background-image:url(../images/walking.png);
+	width:250px;
+	height:190px;
+	bottom:6%;
 	}
 
-#earning_p{
-	background:url(../images/earning_share_p.png);	
-	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100%;
-	position:fixed;
-	background-position: 50% 50%;
-	z-index: -8;
-
+	
+.school{
+	position:absolute;
+	width:140px;
+	height:242px;
+	bottom: 5%;
 	}
 
+#schoolunder{
+	background:url(../images/door_frame.png);
+	}
 
-
-
+#schoolover{
+	background:url(../images/door_noframe.png);
+	}
 
 
 /*  ==== COUNTER ==== */
