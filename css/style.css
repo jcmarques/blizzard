@@ -572,7 +572,45 @@ p {
 	z-index: -8;
 
 	}
+video { 
+    width:300px;    -ms-transform: rotate(-45deg);
+    -ms-transform-origin: center center;
+    -o-transform: rotate(-30deg);
+    -o-transform-origin: center center;
+    -webkit-transform: rotate(-30deg);
+    -webkit-transform-origin: center center;
+    -moz-transform: rotate(-30deg);
+    -moz-transform-origin: center center;
+    -transform: rotate(-30deg);
+    -transform-origin: center center;
+    position:relative;
+    left:-100px;
+    top:-50px;
+}
+.rotate{
+    position:relative;
+    left:100px;
+    top:45px;
+    overflow:hidden;
+    width:200px;
+    height:200px;
+    background-color:#336699;    -ms-transform: rotate(45deg);
+    -ms-transform-origin: center center;
+    -webkit-transform: rotate(30deg);
+    -webkit-transform-origin: center center;
+    -o-transform: rotate(30deg);
+    -o-transform-origin: center center;
+    -moz-transform: rotate(30deg);
+    -moz-transform-origin: center center;
+    -transform: rotate(30deg);
+    -transform-origin: center center;
+}
 
+.container{
+    overflow:hidden;
+    height:145px;
+    background-color:transparent;
+}
 
 /* === 4th Scene === */
 
@@ -584,7 +622,7 @@ p {
 
 
 #sky_4th{
-	background: url(../images/sky_3rd.png);
+	background: url(../images/sky_4th.png);
 	width: 60000px;
 	background-repeat: repeat;
 	z-index: -3333;
@@ -592,7 +630,7 @@ p {
 	}
 
 #floor_4th{
-	background: url(../images/floor_3rd.png) left bottom;
+	background: url(../images/floor_4th.png) left bottom;
 	width: 60000px;
 	background-repeat: repeat-x;
 	position: absolute;
@@ -600,7 +638,7 @@ p {
 	}
 
 #sky_4th_asymmetrical{
-	background: url(../images/sky_asymmetrical.png);
+	background: url(../images/sky_4th_asymmetric.png);
 	width: 200vw;
 	background-repeat: repeat;
 	transform-origin: top left;
@@ -610,7 +648,7 @@ p {
 
 
 #sky_4th_asymmetrical_1{
-	background: url(../images/sky_asymmetrical.png);
+	background: url(../images/sky_4th_asymmetric.png);
 	width: 120vw;
 	background-repeat: repeat;
 	transform-origin: right top left;
@@ -620,7 +658,7 @@ p {
 	}
 
 #sky_4th_asymmetrical_2{
-	background: url(../images/sky_asymmetrical.png);
+	background: url(../images/sky_4th_asymmetric.png);
 	width: 120vw;
 	background-repeat: repeat;
 	transform-origin: top right bottom;
@@ -632,8 +670,8 @@ p {
 
 /* -- CONTROLLER --*/
 
-#controller_w_{
-	background:url(../images/controller_w.png);	
+#operating_w{
+	background:url(../images/operating_income_w.png);	
 	background-repeat: no-repeat; 
 	width: 100%;
 	height: 100%;
@@ -643,8 +681,8 @@ p {
 
 	}
 
-#controller_p_{
-	background:url(../images/controller_p.png);	
+#operating_p{
+	background:url(../images/operating_income_p.png);	
 	background-repeat: no-repeat; 
 	width: 100%;
 	height: 100%;
@@ -657,8 +695,8 @@ p {
 
 /* -- PC --*/
 
-#pc_w_{
-	background:url(../images/pc_w.png);	
+#consolidated_w{
+	background:url(../images/consolidated_w.png);	
 	background-repeat: no-repeat; 
 	width: 100%;
 	height: 100%;
@@ -668,8 +706,8 @@ p {
 
 	}
 
-#pc_p_{
-	background:url(../images/pc_p.png);	
+#consolidated_p{
+	background:url(../images/consolidated_p.png);	
 	background-repeat: no-repeat; 
 	width: 100%;
 	height: 100%;
@@ -684,8 +722,8 @@ p {
 
 /*-- Internet --*/
 
-#internet_w_{
-	background:url(../images/internet_w.png);	
+#earning_w{
+	background:url(../images/earning_share_w.png);	
 	background-repeat: no-repeat; 
 	width: 100%;
 	height: 100%;
@@ -695,8 +733,8 @@ p {
 
 	}
 
-#internet_p_{
-	background:url(../images/internet_p.png);	
+#earning_p{
+	background:url(../images/earning_share_p.png);	
 	background-repeat: no-repeat; 
 	width: 100%;
 	height: 100%;
